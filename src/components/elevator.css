@@ -18,8 +18,24 @@
     flex-direction: column;
     gap:20px;
 }
+.elevatorLeft .presentFloor input {
+    width:50px;
+    height:30px;
+    font-size:1.5rem;
+    text-align:center;
+}
 .elevatorLeft button {
     width:60px;
+    height:30px;
+}
+.elevatorMiddle {
+    width:10%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.floor input {
+    width:53px;
     height:30px;
 }
 .elevatorRight {
