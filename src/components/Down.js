@@ -1,8 +1,8 @@
 
-const Down = ({presentFloor}) => {
+const Down = () => {
     return (
         <div className="down">
-            <button>DOWN</button>
+
         </div>
     )
 }

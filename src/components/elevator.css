@@ -1,60 +1,20 @@
 * {
     margin:0;
+    box-sizing:border-box;
     border:1px solid;
 }
 .elevator {
+    width:99vw;
+    height:99vh;
     display:flex;
-    justify-content: space-between;
-    gap:50px;
-    width:100vw;
-    height:100vh;
-    margin-left:20px;
+    justify-content:space-between;
 }
-.elevatorLeft {
+.left {
     width:40%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    flex-direction: column;
-    gap:20px;
 }
-.elevatorLeft .presentFloor input {
-    width:50px;
-    height:30px;
-    font-size:1.5rem;
-    text-align:center;
-}
-.elevatorLeft button {
-    width:60px;
-    height:30px;
-}
-.elevatorMiddle {
-    width:10%;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-.floor input {
-    width:53px;
-    height:30px;
-}
-.elevatorRight {
+.right {
     width:40%;
-    display:flex;
-    align-items: center;
-    justify-content: center;
 }
-.elevatorRight .inside {
-    display: grid;
-    grid-template-columns: repeat(2,100px);
-    justify-content: center;
-    gap:5px;
-    align-items: center;
-}
-.inside button {
-    height:40px;
-    width:100px;
-}
-button {
-    cursor:pointer;
+.middle {
+    width:15%;
 }

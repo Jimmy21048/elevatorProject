@@ -1,7 +1,8 @@
 
-const Up = ({presentFloor, position, setPosition}) => {
+const Up = () => {
+
     const handleUp = () => {
-        // let subtract = presentFloor>position? presentFloor-position :position-presentFloor;
+        
     }
     return (
         <div className="up">
