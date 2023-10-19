@@ -1,10 +1,11 @@
 import Up from "./Up";
 import Down from "./Down";
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 const Elevator = () => {
     const [elevatorFloor, setElevatorFloor] = useState(0);
     const [targetFloor, setTargetFloor] = useState(0);
+    const middleRef = useRef(null);
     return (
         <div className="elevator">
             <div className="left">
@@ -16,10 +17,13 @@ const Elevator = () => {
                     value={elevatorFloor}
                     onChange={(e) =>setElevatorFloor(e.target.value)} />
                 </div>
-                <Up />
+                <Up
+                {...{elevatorFloor,targetFloor,setTargetFloor,middleRef}} />
                 <Down />
             </div>
-            <div className="middle"></div>
+            <div className="middle" ref={middleRef}>
+
+            </div>
             <div className="right"></div>
         </div>
     )
